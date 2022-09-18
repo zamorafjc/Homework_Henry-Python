@@ -39,18 +39,18 @@ for var51 in range(0,var51):
 
 # 6. Utilizar un ciclo while para realizar el factorial de un número guardado en una variable, sólo si la variable contiene un número entero mayor a 0
 var61 = 5
-var62 = var61 - 1
-var_fac = var61
-if var62 > 0:
-    if type(var62) == int:
+if type(var61) == int:
+    if var61 > 0:
+        var62 = var61 - 1
+        var_fac = var61
         while var62 > 0:
             var_fac = var_fac * var62
             var62 = var62 - 1
         print(var_fac,'es el factorial de',var61)
     else:
-        print(var62, 'No es entero')
+        print(var61, 'No es mayor a cero')
 else:
-    print(var62, 'No es mayor de 0')
+    print(var61, 'No es entero')
 
 # 7. Crear un ciclo for dentro de un ciclo while
 var71 = 7
